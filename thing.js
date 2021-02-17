@@ -25,6 +25,7 @@ var col = [
 	{"question": "The demographic transition model describes population change over time as a country becomes more developed. Age-structure diagrams describe how populations are distributed across age ranges. Which of the following age-structure diagrams best displays the age ranges in a country that is in stage 2 of the demographic transition?", "answer": "An expansive pyramid age-structure diagram"}
 ];
 
+setInterval(() => {
 var count = document.getElementsByClassName("item counters")[0].textContent.split(" ")[0];
 var qEl = document.getElementsByClassName("lrn_question")[count - 1];
 var question = qEl.textContent;
@@ -71,3 +72,4 @@ col.forEach((v, i) => {
 		});
 	}
 });
+}, 1000);
